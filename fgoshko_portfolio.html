@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  color: rgb(51, 131, 184);
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  font-family: 'Oswald', sans-serif; /* Imported using the links in the <head>  */
+  padding: 30px;
+  text-align: center;
+  background: rgb(150, 150, 150);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(51, 131, 184);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding-left: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/* Style images so websites can't change their sizing */
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Setting maximum image width 1024 */
+.imagemaxw1024{
+     width:100%;
+     max-width:1024px;
+ }
+
+/* Setting maximum image width 308 */
+.imagemaxw308{
+     width:100%;
+     max-width:308px;
+ }
+
+/* Setting maximum image height */
+.imagemaxh1024{
+     height:100%;
+     max-height:1024px;
+ }
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Frank Goshko II</h1>
+  </div>
+
+<div class="topnav">
+  <a href="https://codingtemple.com/">Coding Temple</a>
+  <a href="https://www.w3schools.com/html/default.asp">Learn HTML</a>
+  <a href="https://www.w3schools.com/css/default.asp">Learn CSS</a>
+  <a href="https://www.linkedin.com/in/frankgoshko/" style="float:right">LinkedIn</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Family</h2>
+      <h5>10/8/2021</h5>
+      <img src="images/goshkos.jpg" alt="Family picture" class="imagemaxw1024">
+      <p>What a day...</p>
+      <p>On the 8<sup>th</sup> of October, my wife and I were finally able to celebrate our marriage. Although we kept our initial wedding date of 9/25/2020, we had to postpone our big celebration multiple times due to COVID-19.</p>
+    </div>
+    <div class="card">
+      <h2>Friends</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Friends are the family we get to choose</p>
+      <p>I couldn't ask for better friends. I am so honored to have these guys in my life.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img src="images/Frank1.jpg" alt="Frank selfie" class="imagemaxh1024">
+      <p>Just a <del>typical</del> dude trying to add some positivity to the lives of those around me. I love food, friends, and family. I enjoy playing video games too much. I'm really into golfing, but I wouldn't say I have "fun" doing it. </p>
+    </div>
+    <div class="card">
+      <h3>What I've been playing</h3>
+      <a href="https://www.newworld.com/en-us">New World</a><br>
+      <img src="images/newworld.jpg" class="imagemaxw308"><br>
+      <a href="https://store.steampowered.com/app/892970/Valheim/">Valheim</a><br>
+      <img src="images/valheim.jpg" class="imagemaxw308"><br>
+      <a href="https://terraria.org/">Terraria</a><br>
+      <img src="images/terraria.jpg" class="imagemaxw308"><br>
+    </div>
+    <div class="card">
+      <h3>Feedback</h3>
+      <p>Hate the site? Love it? Leave me a comment and let me know!</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
